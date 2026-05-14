@@ -1,0 +1,45 @@
+.column {
+    display: flex;
+    gap: 1em;
+}
+
+#play {
+    border: 2px solid black;
+    width: 400px;
+    min-height: 20px;
+}
+
+img {
+    image-rendering: pixelated;
+}
+
+.pattern {
+    position: relative;
+}
+
+.pattern img {
+    position: absolute;
+    z-index: 5;
+}
+
+.row {
+    width: 400px;
+    height: 18px;
+    background-color: aqua;
+}
+
+.red {
+    background-color: crimson;
+}
+
+.yellow {
+    background-color: darkgoldenrod;
+}
+
+.blue {
+    background-color: cadetblue;
+}
+
+.green {
+    background-color: darkolivegreen;
+}
