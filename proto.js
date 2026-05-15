@@ -31,30 +31,30 @@ function createPattern(pattern) {
     
     if (rows == 4) {
         if (pattern == 1) {
-        img.src = '/img/4tile1.png';
+        img.src = 'https://a-hill79.github.io/weaveprototype//img/4tile1.png';
         }
         else if (pattern == 2) {
-            img.src = "/img/4tile2.png";
+            img.src = "https://a-hill79.github.io/weaveprototype//img/4tile2.png";
         }
         else if (pattern == 3) {
-            img.src = "/img/4tile3.png";
+            img.src = "https://a-hill79.github.io/weaveprototype//img/4tile3.png";
         }
         else if ( pattern == 4) {
-            img.src = "/img/4tile4.png";
+            img.src = "https://a-hill79.github.io/weaveprototype//img/4tile4.png";
         }
     }
     else if (rows == 8) {
         if (pattern == 1) {
-        img.src = '/img/8tile1.png';
+        img.src = 'https://a-hill79.github.io/weaveprototype//img/8tile1.png';
         }
         else if (pattern == 2) {
-            img.src = "/img/8tile2.png";
+            img.src = "https://a-hill79.github.io/weaveprototype//img/8tile2.png";
         }
         else if (pattern == 3) {
-            img.src = "/img/8tile3.png";
+            img.src = "https://a-hill79.github.io/weaveprototype//img/8tile3.png";
         }
         else if ( pattern == 4) {
-            img.src = "/img/8tile4.png";
+            img.src = "https://a-hill79.github.io/weaveprototype//img/8tile4.png";
         }
     }
 }
