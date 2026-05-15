@@ -6,57 +6,53 @@
         <link rel="stylesheet" type="text/css" href="/style.css">
     </head>
     <body>
-        <h1></h1>
         <p>
             hi and welcome to my art games prototype. the purpose of these 
-            tests is to determine which system works best.
+            tests is to determine which mode works best.
         </p>
         <p>
-            what do i mean by "works best?" i want new players to be able to 
-            pick up the system without any confusion but have the "game" "play" 
-            be complex enough that a more experienced weaver still finds the 
-            process engaging/interesting.
+            what do i mean by "works best?" i want to strike a balance between
+            complexity of data stored and aesthetic value.
         </p>
         <p>
-            what i want you to do: play around with the different modes i have
-            made available. make a mental note of which complexity appeals most 
-            to you and why, as well as the aesthetic value of each mode.
+            by necessity (getting this done quickly), the experience below is pretty
+            simplified. it may take a second for images load when selecting a choice.
         </p>
         <p>
-            once you are done, fill out this form.
+            please <a href="https://forms.gle/MzHMn2vdxNs47R7XA" target="_blank">fill out this form</a> to give feedback!
         </p>
         <p>Choose ur mode:</p>
         <p>
-            <button onclick="initialize(8, false)">8 tile</button>
-            <button onclick="initialize(4, false)">4 tile</button>
-            <button onclick="initialize(4, true)">4 tile color</button>
-            <button onclick="initialize(8, true)">8 tile color</button>
-            <button onclick="initialize(0)">reset</button>
+            <button onclick="scenario(1)">8 tile RPG</button>
+            <button onclick="scenario(2)">4 tile RPG</button>
         </p>
         <p>
-            choose story
+            <button onclick="scenario(3)">8 tile meditation</button>
+            <button onclick="scenario(4)">4 tile meditation</button>
         </p>
         <p>
-            <button onclick="story(1)">rpg</button>
-            <button onclick="story(2)">meditation</button>
-            <button onclick="story(0)">reset</button>
-            active story: <span id="activeStory" style="font-weight: bold;">none</span>
+            <button onclick="scenario(5)">8 tile color experiment</button>
+            <button onclick="scenario(6)">4 tile color experiment</button>
         </p>
-        <h2 id="title">choose mode</h2>
+        <p>
+            <button onclick="freePlay()">free play</button>
+            <button onclick="reset()">reset</button>
+        </p>
+        <p>
+            current mode: <b><span id="title">select a mode</span></b>
+        </p>
         <div class="column">
             <div>
                 <div id="play">
                     
                 </div>
             </div>
-            <div>
-                <button onclick="createPattern(1)">what do</button>
-                <button onclick="createPattern(2)">what do</button>
-                <button onclick="createPattern(3)">what do</button>
-                <button onclick="createPattern(4)">what do</button>
+            <div id="dialogue">
             </div>
         </div>    
         
         <script type="text/javascript" src="proto.js"></script>
+        <script type="text/javascript" src="dialogue.js"></script>
+        <script type="text/javascript" src="handler.js"></script>
     </body>
 </html>
